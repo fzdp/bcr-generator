@@ -233,13 +233,6 @@ class MainFrame(wx.Frame):
         self.btn_open_csv_frame.Bind(wx.EVT_BUTTON, self._open_csv_frame)
         self.Bind(wx.EVT_COLLAPSIBLEPANE_CHANGED, self._on_collapsible_pane_changed)
 
-        # todo 配置文件加载和管理，None值处理
-        print("TODO: 配置文件加载和管理，None值处理, PROGRESS多线程处理，防止界面死机？")
-        print("TODO: 任务列表")
-        print("TODO: 细节优化！")
-        print("TODO: 程序添加图标，便于在alt+Tab切换程序时识别")
-        print("TODO: CSV预处理 添加index name，year_list可以为None")
-
     def _on_collapsible_pane_changed(self, _):
         self.Layout()
 
